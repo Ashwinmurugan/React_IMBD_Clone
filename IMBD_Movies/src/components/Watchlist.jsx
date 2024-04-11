@@ -140,7 +140,7 @@ export default function Watchlist({ watchlist, setwatchlist , handleRemoveFromWa
                     <td className="flex items-center px-6 py-4">
                       <img
                         className="h-[7rem] w-[11rem] "
-                        src={`https://image.tmdb.org/t/p/original/${movieObj.backdrop_path}`}
+                        src={`API/Link${movieObj.backdrop_path}`}
                         alt={movieObj.original_title}
                       />
                       <div className="mx-10 font-semibold text-base">
