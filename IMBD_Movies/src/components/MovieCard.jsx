@@ -8,14 +8,7 @@ function MovieCard({
   handleRemoveFromWatchlist,
   watchlist,
 }) {
-  // function doesContain(movieObj) {
-  //   for (let index = 0; index < watchlist.length; index++) {
-  //     if (watchlist[index].id === movieObj.id) {
-  //       return true;
-  //     }
-  //   }
-  //   return false;
-  // }
+  
   function doesContain(movieObj) {
     if (watchlist && Array.isArray(watchlist)) { // Check if watchlist is not null and is an array
       for (let index = 0; index < watchlist.length; index++) {
@@ -29,7 +22,7 @@ function MovieCard({
   
   const backgroundImageStyle = poster_path
     ? {
-        backgroundImage: `url(https://image.tmdb.org/t/p/original/${poster_path})`,
+        backgroundImage: `url(API${poster_path})`,
       }
     : {};
 
